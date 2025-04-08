@@ -1,13 +1,18 @@
 package com.ecg.sample;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+
 
 import com.clj.ecgview.EcgView;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,5 +29,10 @@ public class MainActivity extends AppCompatActivity {
             list.add(random.nextInt(30));
         }
         ecgView.setDataList(list);
+
+
+        findViewById(R.id.ecgh_view).setOnClickListener((View view)->{
+            MainActivity.this.startActivity(new Intent(MainActivity.this,EcgHActivity.class));
+        });
     }
 }

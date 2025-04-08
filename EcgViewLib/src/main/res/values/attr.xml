@@ -17,7 +17,7 @@
         <!--是否绘制小网格-->
         <attr name="littleGrid" format="boolean" />
         <!--背景颜色-->
-        <attr name="backgroundColor" format="color|integer" />
+        <attr name="ecgbackgroundColor" format="color|integer" />
         <!--大网格颜色-->
         <attr name="gridColor" format="color|integer" />
         <!--小网格颜色-->
@@ -34,4 +34,25 @@
         <attr name="mvData" format="float" />
     </declare-styleable>
 
+
+    <declare-styleable name="EcgHorizontalView">
+        <!--每个大网格中的小网格个数-->
+        <attr name="ecghLittleGridNum" format="integer" />
+        <!--每个小网格的大小 px-->
+        <attr name="ecghLittleGridPxSize" format="integer" />
+        <!--是否绘制小网格-->
+        <attr name="ecghLittleGrid" format="boolean" />
+        <!--背景颜色-->
+        <attr name="ecghBackgroundColor" format="color|integer" />
+        <!--大网格颜色-->
+        <attr name="ecghGridColor" format="color|integer" />
+        <!--小网格颜色-->
+        <attr name="ecghLittleGridColor" format="color|integer" />
+        <!--心电线的颜色-->
+        <attr name="ecghLineColor" format="color|integer" />
+        <!--最左边线间隔大网格数-->
+        <attr name="ecghStartColumn" format="integer" />
+        <!--每个小网格达标的心电值-->
+        <attr name="ecghMvData" format="float" />
+    </declare-styleable>
 </resources>

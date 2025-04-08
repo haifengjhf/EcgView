@@ -52,7 +52,7 @@ public class EcgView extends View {
         yGridNum = a.getInt(R.styleable.EcgView_yGridNum, 38);
         minGridNum = a.getInt(R.styleable.EcgView_minGridNum, 5);
         littleGrid = a.getBoolean(R.styleable.EcgView_littleGrid, true);
-        backgroundColor = a.getInt(R.styleable.EcgView_backgroundColor, Color.WHITE);
+        backgroundColor = a.getInt(R.styleable.EcgView_ecgbackgroundColor, Color.WHITE);
         gridColor = a.getInt(R.styleable.EcgView_gridColor, Color.RED);
         littleGridColor = a.getInt(R.styleable.EcgView_littleGridColor, Color.rgb(255, 180, 180));
         lineColor = a.getInt(R.styleable.EcgView_lineColor, Color.BLACK);
